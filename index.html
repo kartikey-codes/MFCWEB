@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html data-wf-domain="www.designunlimited.studio" data-wf-page="642c22cbffd9a0fb34e28bdb" data-wf-site="642c22cbffd9a014d7e28bda">
+   <head>
+      <meta charset="utf-8"/>
+      <title>Mozilla Firefox Club</title>
+      <meta content="Mozilla Firefox Club-VIT is the club for Mozilla Firefox open-source community enthusiasts at VIT University, Vellore, to promote Web development and Open Source Technologies in the University." name="description"/>
+      <meta content="Mozilla Firefox Club" property="og:title"/>
+      <meta content="Mozilla Firefox Club-VIT is the club for Mozilla Firefox open-source community enthusiasts at VIT University, Vellore, to promote Web development and Open Source Technologies in the University." property="og:description"/>
+      <meta content="" property="og:image"/>
+      <meta content="Mozilla Firefox Club" property="twitter:title"/>
+      <meta content="Mozilla Firefox Club-VIT is the club for Mozilla Firefox open-source community enthusiasts at VIT University, Vellore, to promote Web development and Open Source Technologies in the University." property="twitter:description"/>
+      <meta content="" property="twitter:image"/>
+      <meta property="og:type" content="website"/>
+      <meta content="summary_large_image" name="twitter:card"/>
+      <meta content="width=device-width, initial-scale=1" name="viewport"/>
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+      <!-- <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1f82f6d6-6cc8-110c-6663-4bfd30ed094b"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1f82f6d6-6cc8-110c-6663-4bfd30ed094b"] {opacity:0;}}</style> -->
+      <link href="https://fonts.googleapis.com/" rel="preconnect"/>
+      <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Material Icons:regular"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+      <link href="/img/logo.ico" rel="shortcut icon" type="image/x-icon"/>
+      <link href="/img/logo.ico" rel="apple-touch-icon"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=DM+Sans:opsz,wght@9..40,100&family=Italiana&display=swap" rel="stylesheet">
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <style>
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
+         .grain-container {
+         background-color:#0d0a12;
+         }
+      </style>
+      <style>
+         .grain-container {
+         position: fixed!important;
+         }
+         .nav-hover {
+         position: absolute;
+         transition: all 200ms ease;
+         pointer-events: none;
+         opacity: 0;
+         transform: translate(-50%, -50%);
+         }
+         .splide__track {
+         overflow: visible;
+         }
+         .radial-gradient {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 100%);
+         filter: blur(50px);
+         opacity: 0;
+         pointer-events: none;
+         transition: opacity 0.2s ease;
+         }
+         .itemcontainer:hover .radial-gradient {
+         opacity: 0.7;
+         }
+         .logowrapper {
+         padding-left: 40px;
+         padding-right: 40px;
+         text-align: center;
+         }
+         .sectionsmallheaders {
+         font-size: 24px;
+         color: white;
+         }
+         .center-vertically {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .circular-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .circular-image img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+   </style>
+      <style>
+         #grain {
+         pointer-events: none
+         }
+      </style>
+   </head>
+   <body class="body">
+   
+      <div class="headerfixed">
+         <div class="header hide">
+            <div class="logo">
+               <div class="logogradientavatar">
+                  <div class="innercircle">
+                     <div class="innerimage"></div>
+                  </div>
+               </div>
+               <div class="logotext">
+                  <h1 class="logo-heading">MOZILLA FIREFOX CLUB</h1>
+                  <p class="smalllogotext">Open-source community enthusiasts</p>
+               </div>
+            </div>
+            <nav class="nav">
+                <img src="img/finallogo.png" alt="Logo" class="nav-logo">
+                <span class="logo-text"></span>
+               <div class="nav-hover"></div>
+               <a href="#Aim" class="navitem">Our Aim</a>
+               <a href="#Domain" class="navitem">Domains</a>
+               <a href="#" class="navitem">Events</a>
+               <a href="#Blog" class="navitem">Blog</a>
+               <a href="#Board" class="navitem">Board</a>               
+            </nav>
+         </div>
+      </div>
+    
+      <div id="particles-js"></div>
+      <div class="section header">
+
+        <!-- Added fox image container -->
+        <div class="fox-image-container">
+          <img src="img/fox.png" class="fox-image">
+        </div>
+      
+        <div data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11" class="eclipse hide"></div>
+      
+        <div class="wrapper">
+           <div class="unlimitedsupporttitle">
+              <div class="maintitle">
+                 <h1 class="heading-2">MOZILLA FIREFOX CLUB</h1>
+                 <p class="subheading">A student club in VIT Vellore</p>
+              </div>
+              <p class="paragraph intro">Mozilla Firefox Club-VIT is the club for Mozilla Firefox open-source community enthusiasts at VIT University, Vellore, to promote Web development and Open Source Technologies in the University.</p>
+                  
+           </div>
+        </div>
+      
+      </div>
+      
+    
+      <h2 class="sectionnewheaders">About Us<br/></h2>  
+        <div class="logowrapper">
+          <p class="paragraphdesign">Mozilla Firefox Club VIT, one of the largest developers' communities in VIT, Vellore has been working with an aspiration of changing ideas into reality ever since its inception. With a 6 year rich history as one of the top technical clubs comprising a team of over 150+ core members, 3 mentors, and 10 as the executive board, dedicated to technically strengthening the students by integrating their skills in various fields of Engineering & Technology, so as to face the highly competitive environment. We provide a morale boosting system for the talented youth through our professional endeavors and inspire each student at VIT and beyond to follow our academic interests and goals. We have a diverse audience from over 15 countries as a part of the students we teach. Creating value through real world impact-driven projects.</p>
+        </div>
+      </div>
+      <div id="Domain" class="section header">
+        <div class="container gallery bottomborder bottomnone topbordernone">
+           <h2 class="sectionnewheaders">Our Domains<br/></h2>
+           <p class="paragraphdesign">We believe in hands on learning and freedom of work. Hence all of our core committee members are provided with selection of five domains to find where their true passion lies..
+        </p>
+           <div class="benefitscontainer spacetop">
+              <div class="itemcontainer2 aligntop borderbottomnew">
+                 <div class="iconcontainer">
+                     <div class="circular-image">
+                         <img src="img/technical.png" loading="lazy" alt="" class="iconbenefit" />
+                     </div>
+                     <div class="eclipse iconback"></div>
+                 </div>
+                 <div class="benefitscontentright">
+                     <div class="center-vertically">
+                         <h3 class="heading-3">Technical</h3>
+                         <p class="paragraphdesign"><br/></p>
+                     </div>
+                 </div>
+                 <div class="line poistionsmallboxes"></div>
+                 <div class="eclipse benefitseclipse"></div>
+             </div>              
+             <div class="itemcontainer2 aligntop borderbottomnew">
+              <div class="iconcontainer">
+                  <div class="circular-image">
+                      <img src="img/management.png" loading="lazy" alt="" class="iconbenefit" />
+                  </div>
+                  <div class="eclipse iconback"></div>
+              </div>
+              <div class="benefitscontentright">
+                  <div class="center-vertically">
+                      <h3 class="heading-3">Management</h3>
+                      <p class="paragraphdesign"></p>
+                  </div>
+              </div>
+              <div class="line poistionsmallboxes"></div>
+              <div class="eclipse benefitseclipse"></div>
+          </div> 
+          <div class="itemcontainer2 aligntop borderbottomnew">
+           <div class="iconcontainer">
+               <div class="circular-image">
+                   <img src="img/design.png" loading="lazy" alt="" class="iconbenefit" />
+               </div>
+               <div class="eclipse iconback"></div>
+           </div>
+           <div class="benefitscontentright">
+               <div class="center-vertically">
+                   <h3 class="heading-3">Design</h3>
+                   <p class="paragraphdesign"></p>
+               </div>
+           </div>
+           <div class="line poistionsmallboxes"></div>
+           <div class="eclipse benefitseclipse"></div>
+       </div> 
+       <div class="itemcontainer2 aligntop borderbottomnew">
+        <div class="iconcontainer">
+            <div class="circular-image">
+                <img src="img/editorial.png" loading="lazy" alt="" class="iconbenefit" />
+            </div>
+            <div class="eclipse iconback"></div>
+        </div>
+        <div class="benefitscontentright">
+            <div class="center-vertically">
+                <h3 class="heading-3">Editorial</h3>
+                <p class="paragraphdesign"></p>
+            </div>
+        </div>
+        <div class="line poistionsmallboxes"></div>
+        <div class="eclipse benefitseclipse"></div>
+    </div> 
+    <div class="itemcontainer2 aligntop borderbottomnew">
+        <div class="iconcontainer">
+            <div class="circular-image">
+                <img src="img/media.png" loading="lazy" alt="" class="iconbenefit" />
+            </div>
+            <div class="eclipse iconback"></div>
+        </div>
+        <div class="benefitscontentright">
+            <div class="center-vertically">
+                <h3 class="heading-3">Media</h3>
+                <p class="paragraphdesign"></p>
+            </div>
+        </div>
+        <div class="line poistionsmallboxes"></div>
+        <div class="eclipse benefitseclipse"></div>
+    </div> 
+           </div>
+      <div id="Aim" class="section header services">
+         <div id="how-it-works" class="container">
+            <h3 class="sectionsmallheaders">Fostering Open-Source Innovation</h3>
+            <h2 class="sectionnewheaders">Our Aim</h2>
+            <div class="howitworkswrapper">
+               <div class="linegradientstart"></div>
+               <div class="containeritem">
+                  <div class="iteminside image left">
+                     <div class="eclipse small"></div>
+                     <img src="https://uploads-ssl.webflow.com/642c22cbffd9a014d7e28bda/642d4e1f651b71c15c74acf3_image_subscribe.svg" loading="lazy" alt="" class="illustrationimage"/>
+                  </div>
+                  <div class="linegradientstart plain">
+                     <div class="eclipse extrasmall"></div>
+                     <div class="circlenumber">
+                        <div class="numberinsidegradient">1</div>
+                     </div>
+                  </div>
+                  <div class="iteminside text">
+                     <h3 class="heading-3">Promoting Open-Source Technologies</h3>
+                     <p class="paragraphdesign">Empowering the VIT community with the knowledge and tools to contribute to the world of open-source technology and software development.</p>
+                  </div>
+               </div>
+               <div class="containeritem trigger">
+                  <div class="iteminside text">
+                     <h3 class="heading-3">Enhancing Web Development Skills</h3>
+                     <p class="paragraphdesign">Equipping students with hands-on experience and expertise in web development to thrive in the digital age.</p>
+                  </div>
+                  <div class="linegradientstart plain">
+                     <div class="eclipse extrasmall"></div>
+                     <div class="circlenumber">
+                        <div class="numberinsidegradient">2</div>
+                     </div>
+                  </div>
+                  <div class="iteminside image right">
+                     <div class="eclipse small"></div>
+                     <img src="https://uploads-ssl.webflow.com/642c22cbffd9a014d7e28bda/642d50d24eda5ea1270893a4_image_givemetask.svg" loading="lazy" alt="" class="illustrationimage"/>
+                  </div>
+               </div>
+               <div class="containeritem trigger">
+                  <div class="iteminside image right">
+                     <div class="eclipse small"></div>
+                     <img src="https://uploads-ssl.webflow.com/642c22cbffd9a014d7e28bda/642d8e093be9f8614718b211_image_receive.svg" loading="lazy" alt="" class="illustrationimage"/>
+                  </div>
+                  <div class="linegradientstart plain">
+                     <div class="eclipse extrasmall"></div>
+                     <div class="circlenumber">
+                        <div class="numberinsidegradient">3</div>
+                     </div>
+                  </div>
+                  <div class="iteminside text">
+                     <h3 class="heading-3">Fostering a Collaborative Learning Environment</h3>
+                     <p class="paragraphdesign">Cultivating a culture of knowledge-sharing and teamwork among members to drive innovation.</p>
+                  </div>
+               </div>
+               <div class="containeritem trigger">
+                  <div class="iteminside image right hide">
+                     <div class="eclipse small"></div>
+                     <img src="https://uploads-ssl.webflow.com/642c22cbffd9a014d7e28bda/642d8e093be9f8614718b211_image_receive.svg" loading="lazy" alt="" class="illustrationimage"/>
+                  </div>
+                  <div class="linegradientstart plain smaller">
+                     <div class="eclipse extrasmall"></div>
+                     <div class="circlenumber">
+                        <div class="numberinsidegradient">4</div>
+                     </div>
+                  </div>
+                  <div class="iteminside text hide">
+                     <h3 class="heading-3">Global Outreach and Impact</h3>
+                     <p class="paragraphdesign">Expanding our reach beyond borders, connecting with students from diverse backgrounds, and making a meaningful global impact through our projects and initiatives.</p>
+                  </div>
+               </div>
+               <div class="linegradientstart last"></div>
+               <div class="lastitemreveision trigger">
+                  <div class="iconcontainer">
+                     <img src="https://uploads-ssl.webflow.com/642c22cbffd9a014d7e28bda/642d8fc469921c4204a86c89_revision-icon.svg" loading="lazy" alt="" class="image-3"/>
+                     <h3 class="heading-3 nomargin">Nurturing Technological Leadership</h3>
+                  </div>
+                  <p class="paragraphdesign center">Guiding our members to become future technology leaders by honing their skills, fostering creativity, and instilling a passion for innovation.</p>
+               </div>
+               <div data-w-id="e67514d3-6438-bdb0-bee9-1bc37e4417fd" class="lineanimation"></div>
+            </div>
+         </div>
+      </div>
+
+      <div id="Blog" class="section header">
+        <div class="container gallery bottomborder">
+           <h2 class="sectionnewheaders">Blog Posts<br/></h2>
+           <div class="reviewscontainer">
+              <div class="slideritemreview">
+                 <div class="verticaltestimonialgrid">
+                    <div class="itemcontainer">
+                       <!-- <div class="radial-gradient"></div> -->
+                       <h3 class="sectionsmallheaders">Everything you need to know about NFT's</h3>
+                       <p class="reviewparagraph">The article explains what NFTs are, how they work, and why they are valuable. NFTs are non-fungible tokens, which are unique digital assets that can be verified and traded on a blockchain.
+                          The article also discusses how to make money with NFTs, such as creating and selling digital art, staking NFTs, and investing in NFT platforms and projects.
+                          The article provides some examples of NFTs, such as OpenSea, CryptoKitties, NBA Top Shot, and Beeple's artwork that sold for $69 million.</p>
+                       <img src="https://miro.medium.com/v2/resize:fill:112:112/1*gpiOCaUF2nzxVNW65wI2Gw.jpeg" loading="lazy" alt="" class="imagetestimonial"/>
+                       <div class="namecontainer">
+                          <p class="reviewparagraph name">Manya Garg</p>
+                          <p class="reviewparagraph title"><a href="https://medium.com/mozilla-firefox-club/everything-you-need-to-know-about-nfts-552ed79537b8">Firefox Club</a></p>
+                       </div>
+                    </div>
+                    <div class="itemcontainer">
+                       <div class="radial-gradient"></div>
+                       <h3 class="sectionsmallheaders">Unlocking Identity: A Deep Dive into Decentralized Identifiers (DIDs)</h3>
+                       <p class="reviewparagraph"> The idea of decentralized identifiers (DIDs), which are a standardized way to achieve self-sovereign identity using cryptographic keys and distributed ledgers. It describes the process of creating, 
+                          publishing, and authenticating DIDs, and the benefits they offer, such as privacy, control, reduced data silos, future-proofing, auditability, and user-centric empowerment. 
+                          </p>
+                       <img src="https://miro.medium.com/v2/resize:fill:112:112/0*nLL9f9E8bb8PCCq-.jpeg" loading="lazy" alt="" class="imagetestimonial"/>
+                       <div class="namecontainer">
+                          <p class="reviewparagraph name">Shaan Jain</p>
+                          <p class="reviewparagraph title"><a href="https://medium.com/mozilla-firefox-club/unlocking-identity-a-deep-dive-into-decentralized-identifiers-dids-1e694f42dcc5">Firefox Club</a></p>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="verticaltestimonialgrid">
+                    <div class="itemcontainer">
+                       <div class="radial-gradient"></div>
+                       <h3 class="sectionsmallheaders">The LLM Revolution: How AI is Reshaping Search</h3>
+                       <p class="reviewparagraph">The web page context explains what LLMs (large language models) are and how they are changing the internet.
+                          LLMs are AI models that can understand and generate natural language, as well as search and analyze information from various sources.
+                          LLMs are used to power search engines and recommendation systems, such as WanderWise, a travel tool that helps users find the best camping spots.
+                          LLMs have the potential to impact web traffic and SEO strategies</p>
+                       <img src="https://miro.medium.com/v2/resize:fill:112:112/1*wtBOIcjLH94qs7gdb6hABw.png" loading="lazy" alt="" class="imagetestimonial"/>
+                       <div class="namecontainer">
+                          <p class="reviewparagraph name">Niraj Namjoshi</p>
+                          <p class="reviewparagraph title"><a href="https://medium.com/mozilla-firefox-club/the-llm-revolution-how-ai-is-reshaping-search-74f3306ab5e1">Firefox Club</a></p>
+                       </div>
+                    </div>
+                    <div class="itemcontainer">
+                       <div class="radial-gradient"></div>
+                       <h3 class="sectionsmallheaders">CLOUD COMPUTING: A BRIEF INTRODUCTION</h3>
+                       <p class="reviewparagraph">Cloud computing is the delivery of computing resources over the internet like storage , database , networking and software . Gone are the days when people used to buy these & also had to manage the physical servers which was tedious .
+                          Today , these resources are available at affordable prices which helps in reducing the operating costs , scaling and efficiently running your infrastructure needs. The public cloud is the most common deployment model of cloud computing. It is provided for public use and the users have no control over the infrastructure. 
+                          </p>
+                       <img src="https://miro.medium.com/v2/resize:fill:112:112/1*cmvzjfiuk3vO4YCMBKN2QQ.png" loading="lazy" alt="" class="imagetestimonial"/>
+                       <div class="namecontainer">
+                          <p class="reviewparagraph name">Naman</p>
+                          <p class="reviewparagraph title"><a href="https://medium.com/mozilla-firefox-club/cloud-computing-a-brief-introduction-26aaae3929eb">Firefox Club</a></p>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div data-delay="4000" data-animation="slide" class="reviewsslider w-slider" data-autoplay="true" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                 <div class="w-slider-mask">
+                    <div class="w-slide"></div>
+                 </div>
+                 <div class="w-slider-arrow-left"></div>
+                 <div class="w-slider-arrow-right"></div>
+                 <div class="slide-nav w-slider-nav w-round"></div>
+              </div>
+           </div>
+        </div>
+     </div>
+
+
+      <div id="Faculty" class="section header lastsection">
+         <div class="container gallery bottomborder bottomnone topbordernone">
+            <div class="titlecontainerbottom">
+               <h2 class="sectionnewheaders">Faculty Coordinator<br/></h2>
+               <h2 data-w-id="f35af53e-931b-d30c-2442-d4ea6b9f2c8c" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="sectionh2headers outline">Jayakumar Sadhasivam<br/></h2>
+            </div>
+            <div class="benefitscontainer spacetop mobile">
+               <div class="itemcontainer emptycontainer imagecontainer"><img src="https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg" loading="lazy" width="459" sizes="(max-width: 479px) 100vw, (max-width: 767px) 35vw, (max-width: 991px) 38vw, (max-width: 1439px) 22vw, 24vw" alt="" srcset="https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg 500w, https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg 800w, https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg 918w" class="image-4"/></div>
+               <div class="itemcontainer aligntop relativebottom borderbottom aboutme">
+                  <div class="benefitscontentright aboutme">
+                     <h3 class="sectionsmallheaders">Jayakumar Sadhasivam</h3><br/>
+                     <p class="paragraphdesign"><span class="justbold">Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1</span> at Vellore Institute of Technology (VIT) in the School of Computer Science and Engineering (SCOPE). <br/></p>
+                     <p class="paragraphdesign"><span class="justbold">Jayakumar's areas of expertise include Open Source Programming, Network Security, Storage Technologies, and Machine Learning. His research interests are in the use of technology in education and developing open-source software that takes into consideration the unique needs of learners. He received his Ph.D. in Information Technology from the Vellore Institute of Technology (VIT).<br/></p>
+                     
+                     <p class="paragraphdesign centerquote">He has been a volunteer at Mozilla. He is contributing to various projects in Mozilla few of them are SUMO (Support Mozilla), QA (Quality Assurance), l10n (Localization), WebMaker, Bugzilla, and OpenBadges.<br/></p>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="Board" class="section header">
+         <div class="container gallery bottomborder bottomnone topbordernone">
+            <h2 class="sectionnewheaders">Board Members<br/></h2>
+            <div class="benefitscontainer spacetop">
+               <div class="itemcontainer2 aligntop borderbottomnew">
+                  <div class="iconcontainer">
+                      <div class="circular-image">
+                          <img src="img_board/Prateek Balaji.PNG" loading="lazy" alt="" class="iconbenefit" />
+                      </div>
+                      <div class="eclipse iconback"></div>
+                  </div>
+                  <div class="benefitscontentright">
+                      <div class="center-vertically">
+                          <h3 class="heading-3">Prateek Balaji</h3>
+                          <p class="paragraphdesign"><br/></p>
+                      </div>
+                  </div>
+                  <div class="line poistionsmallboxes"></div>
+                  <div class="eclipse benefitseclipse"></div>
+              </div>              
+              <div class="itemcontainer2 aligntop borderbottomnew">
+               <div class="iconcontainer">
+                   <div class="circular-image">
+                       <img src="img_board/kartikey bhatnagar.jpg" loading="lazy" alt="" class="iconbenefit" />
+                   </div>
+                   <div class="eclipse iconback"></div>
+               </div>
+               <div class="benefitscontentright">
+                   <div class="center-vertically">
+                       <h3 class="heading-3">Kartikey Bhatnagar</h3>
+                       <p class="paragraphdesign"></p>
+                   </div>
+               </div>
+               <div class="line poistionsmallboxes"></div>
+               <div class="eclipse benefitseclipse"></div>
+           </div> 
+           <div class="itemcontainer2 aligntop borderbottomnew">
+            <div class="iconcontainer">
+                <div class="circular-image">
+                    <img src="img_board/naisa.JPG" loading="lazy" alt="" class="iconbenefit" />
+                </div>
+                <div class="eclipse iconback"></div>
+            </div>
+            <div class="benefitscontentright">
+                <div class="center-vertically">
+                    <h3 class="heading-3">Naisa</h3>
+                    <p class="paragraphdesign"></p>
+                </div>
+            </div>
+            <div class="line poistionsmallboxes"></div>
+            <div class="eclipse benefitseclipse"></div>
+        </div> 
+        <div class="itemcontainer2 aligntop borderbottomnew">
+         <div class="iconcontainer">
+             <div class="circular-image">
+                 <img src="img_board/Trisha Paul.JPG" loading="lazy" alt="" class="iconbenefit" />
+             </div>
+             <div class="eclipse iconback"></div>
+         </div>
+         <div class="benefitscontentright">
+             <div class="center-vertically">
+                 <h3 class="heading-3">Trisha Paul</h3>
+                 <p class="paragraphdesign"></p>
+             </div>
+         </div>
+         <div class="line poistionsmallboxes"></div>
+         <div class="eclipse benefitseclipse"></div>
+     </div> 
+            </div>
+
+            <div class="benefitscontainer spacetop">
+               <div class="itemcontainer2 aligntop borderbottomnew">
+                  <div class="iconcontainer">
+                      <div class="circular-image">
+                          <img src="img_board/" loading="lazy" alt="" class="iconbenefit" />
+                      </div>
+                      <div class="eclipse iconback"></div>
+                  </div>
+                  <div class="benefitscontentright">
+                      <div class="center-vertically">
+                          <h3 class="heading-3">N A</h3>
+                          <p class="paragraphdesign"></p>
+                      </div>
+                  </div>
+                  <div class="line poistionsmallboxes"></div>
+                  <div class="eclipse benefitseclipse"></div>
+              </div> 
+              <div class="itemcontainer2 aligntop borderbottomnew">
+               <div class="iconcontainer">
+                   <div class="circular-image">
+                       <img src="img_board/Vedik Agarwal.jpg" loading="lazy" alt="" class="iconbenefit" />
+                   </div>
+                   <div class="eclipse iconback"></div>
+               </div>
+               <div class="benefitscontentright">
+                   <div class="center-vertically">
+                       <h3 class="heading-3">Vedik Agarwal</h3>
+                       <p class="paragraphdesign"></p>
+                   </div>
+               </div>
+               <div class="line poistionsmallboxes"></div>
+               <div class="eclipse benefitseclipse"></div>
+           </div> 
+           <div class="itemcontainer2 aligntop borderbottomnew">
+            <div class="iconcontainer">
+                <div class="circular-image">
+                    <img src="img_board/Aditya Aren.jpeg" loading="lazy" alt="" class="iconbenefit" />
+                </div>
+                <div class="eclipse iconback"></div>
+            </div>
+            <div class="benefitscontentright">
+                <div class="center-vertically">
+                    <h3 class="heading-3">Aditya Aren</h3>
+                    <p class="paragraphdesign"></p>
+                </div>
+            </div>
+            <div class="line poistionsmallboxes"></div>
+            <div class="eclipse benefitseclipse"></div>
+        </div> 
+        <div class="itemcontainer2 aligntop borderbottomnew">
+         <div class="iconcontainer">
+             <div class="circular-image">
+                 <img src="img_board/" loading="lazy" alt="" class="iconbenefit" />
+             </div>
+             <div class="eclipse iconback"></div>
+         </div>
+         <div class="benefitscontentright">
+             <div class="center-vertically">
+                 <h3 class="heading-3">N A</h3>
+                 <p class="paragraphdesign"></p>
+             </div>
+         </div>
+         <div class="line poistionsmallboxes"></div>
+         <div class="eclipse benefitseclipse"></div>
+     </div> 
+            </div>
+            
+            <!--New branch -->
+            <div class="benefitscontainer spacetop">
+               <div class="itemcontainer2 aligntop borderbottomnew">
+                  <div class="iconcontainer">
+                      <div class="circular-image">
+                          <img src="img_board/Stuti Chaudhury.JPG" loading="lazy" alt="" class="iconbenefit" />
+                      </div>
+                      <div class="eclipse iconback"></div>
+                  </div>
+                  <div class="benefitscontentright">
+                      <div class="center-vertically">
+                          <h3 class="heading-3">Stuti Chaudhury</h3>
+                          <p class="paragraphdesign"></p>
+                      </div>
+                  </div>
+                  <div class="line poistionsmallboxes"></div>
+                  <div class="eclipse benefitseclipse"></div>
+              </div> 
+              <div class="itemcontainer2 aligntop borderbottomnew">
+               <div class="iconcontainer">
+                   <div class="circular-image">
+                       <img src="img_board/" loading="lazy" alt="" class="iconbenefit" />
+                   </div>
+                   <div class="eclipse iconback"></div>
+               </div>
+               <div class="benefitscontentright">
+                   <div class="center-vertically">
+                       <h3 class="heading-3">N A</h3>
+                       <p class="paragraphdesign"></p>
+                   </div>
+               </div>
+               <div class="line poistionsmallboxes"></div>
+               <div class="eclipse benefitseclipse"></div>
+           </div> 
+           <div class="itemcontainer2 aligntop borderbottomnew">
+            <div class="iconcontainer">
+                <div class="circular-image">
+                    <img src="img_board/Utkarsh Tyagi.JPG" loading="lazy" alt="" class="iconbenefit" />
+                </div>
+                <div class="eclipse iconback"></div>
+            </div>
+            <div class="benefitscontentright">
+                <div class="center-vertically">
+                    <h3 class="heading-3">Utkarsh Tyagi</h3>
+                    <p class="paragraphdesign"></p>
+                </div>
+            </div>
+            <div class="line poistionsmallboxes"></div>
+            <div class="eclipse benefitseclipse"></div>
+        </div> 
+        <div class="itemcontainer2 aligntop borderbottomnew">
+         <div class="iconcontainer">
+             <div class="circular-image">
+                 <img src="img_board/" loading="lazy" alt="" class="iconbenefit" />
+             </div>
+             <div class="eclipse iconback"></div>
+         </div>
+         <div class="benefitscontentright">
+             <div class="center-vertically">
+                 <h3 class="heading-3">N A</h3>
+                 <p class="paragraphdesign"></p>
+             </div>
+         </div>
+         <div class="line poistionsmallboxes"></div>
+         <div class="eclipse benefitseclipse"></div>
+     </div> 
+            </div>
+            <!--End new Branch-->
+
+            <!--New branch -->
+            <div class="benefitscontainer spacetop">
+               <div class="itemcontainer2 aligntop borderbottomnew">
+                  <div class="iconcontainer">
+                      <div class="circular-image">
+                          <img src="img_board/AdityaPrasad.JPG" loading="lazy" alt="" class="iconbenefit" />
+                      </div>
+                      <div class="eclipse iconback"></div>
+                  </div>
+                  <div class="benefitscontentright">
+                      <div class="center-vertically">
+                          <h3 class="heading-3">Aditya Prasad</h3>
+                          <p class="paragraphdesign"></p>
+                      </div>
+                  </div>
+                  <div class="line poistionsmallboxes"></div>
+                  <div class="eclipse benefitseclipse"></div>
+              </div> 
+              <div class="itemcontainer2 aligntop borderbottomnew">
+               <div class="iconcontainer">
+                   <div class="circular-image">
+                       <img src="img_board/" loading="lazy" alt="" class="iconbenefit" />
+                   </div>
+                   <div class="eclipse iconback"></div>
+               </div>
+               <div class="benefitscontentright">
+                   <div class="center-vertically">
+                       <h3 class="heading-3">N A</h3>
+                       <p class="paragraphdesign"></p>
+                   </div>
+               </div>
+               <div class="line poistionsmallboxes"></div>
+               <div class="eclipse benefitseclipse"></div>
+           </div> 
+           <div class="itemcontainer2 aligntop borderbottomnew">
+            <div class="iconcontainer">
+                <div class="circular-image">
+                    <img src="img_board/Hemant Modi.jpg" loading="lazy" alt="" class="iconbenefit" />
+                </div>
+                <div class="eclipse iconback"></div>
+            </div>
+            <div class="benefitscontentright">
+                <div class="center-vertically">
+                    <h3 class="heading-3">Hemant Modi</h3>
+                    <p class="paragraphdesign"></p>
+                </div>
+            </div>
+            <div class="line poistionsmallboxes"></div>
+            <div class="eclipse benefitseclipse"></div>
+        </div> 
+        <div class="itemcontainer2 aligntop borderbottomnew">
+         <div class="iconcontainer">
+             <div class="circular-image">
+                 <img src="img_board/Tanisha Ambastha.jpeg" loading="lazy" alt="" class="iconbenefit" />
+             </div>
+             <div class="eclipse iconback"></div>
+         </div>
+         <div class="benefitscontentright">
+             <div class="center-vertically">
+                 <h3 class="heading-3">Tanisha Ambastha</h3>
+                 <p class="paragraphdesign"></p>
+             </div>
+         </div>
+         <div class="line poistionsmallboxes"></div>
+         <div class="eclipse benefitseclipse"></div>
+     </div> 
+            </div>
+            <!--End new Branch-->
+
+            <!--New branch -->
+            <div class="benefitscontainer spacetop">
+               <div class="itemcontainer2 aligntop borderbottomnew">
+                  <div class="iconcontainer">
+                      <div class="circular-image">
+                          <img src="img_board/Namah Singhal.jpg" loading="lazy" alt="" class="iconbenefit" />
+                      </div>
+                      <div class="eclipse iconback"></div>
+                  </div>
+                  <div class="benefitscontentright">
+                      <div class="center-vertically">
+                          <h3 class="heading-3">Namah Singhal</h3>
+                          <p class="paragraphdesign"></p>
+                      </div>
+                  </div>
+                  <div class="line poistionsmallboxes"></div>
+                  <div class="eclipse benefitseclipse"></div>
+              </div> 
+              <div class="itemcontainer2 aligntop borderbottomnew">
+               <div class="iconcontainer">
+                   <div class="circular-image">
+                       <img src="img_board/" loading="lazy" alt="" class="iconbenefit" />
+                   </div>
+                   <div class="eclipse iconback"></div>
+               </div>
+               <div class="benefitscontentright">
+                   <div class="center-vertically">
+                       <h3 class="heading-3">N A</h3>
+                       <p class="paragraphdesign"></p>
+                   </div>
+               </div>
+               <div class="line poistionsmallboxes"></div>
+               <div class="eclipse benefitseclipse"></div>
+           </div> 
+           <div class="itemcontainer2 aligntop borderbottomnew">
+            <div class="iconcontainer">
+                <div class="circular-image">
+                    <img src="img_board/sushant saurav.jpg" loading="lazy" alt="" class="iconbenefit" />
+                </div>
+                <div class="eclipse iconback"></div>
+            </div>
+            <div class="benefitscontentright">
+                <div class="center-vertically">
+                    <h3 class="heading-3">Sushant Saurav</h3>
+                    <p class="paragraphdesign"></p>
+                </div>
+            </div>
+            <div class="line poistionsmallboxes"></div>
+            <div class="eclipse benefitseclipse"></div>
+        </div> 
+        <div class="itemcontainer2 aligntop borderbottomnew">
+         <div class="iconcontainer">
+             <div class="circular-image">
+                 <img src="img_board/Ashutosh Prabhudesai.jpg" loading="lazy" alt="" class="iconbenefit" />
+             </div>
+             <div class="eclipse iconback"></div>
+         </div>
+         <div class="benefitscontentright">
+             <div class="center-vertically">
+                 <h3 class="heading-3">Ashutosh Prabhudesai</h3>
+                 <p class="paragraphdesign"></p>
+             </div>
+         </div>
+         <div class="line poistionsmallboxes"></div>
+         <div class="eclipse benefitseclipse"></div>
+     </div> 
+            </div>
+            <!--End new Branch-->
+
+            <div class="bottomeclipse">
+               <div class="eclipse small portfolioimage"></div>
+               <div class="line"></div>
+            </div>
+         </div>
+      </div>
+
+      <div class="footersection">
+         <div class="contentwrapper alignleft">
+            <div class="leftcopy smallmargin">
+               <p class="footercopy">© 2023 Mozilla Firefox Club. All rights reserved.</p>
+               <p class="footercopy"><a href="https://twitter.com/#" target="_blank">Terms and conditions<br/></a></p>
+               <p class="footercopy"><a href="https://twitter.com/#" target="_blank">Privacy Policy<br/></a></p>
+            </div>
+            <div class="leftcopy">
+               <p class="footercopy"><a href="https://twitter.com/#" target="_blank">Twitter</a></p>
+               <p class="footercopy"><a href="https://www.linkedin.com/in/#/" target="_blank">Linkedin</a></p>
+               <p class="footercopy"><a href="https://www.instagram.com/#/" target="_blank">Instagram</a></p>
+               <p class="footercopy"><a href="https://dribbble.com/#" target="_blank">Dribbble</a></p>
+            </div>
+         </div>
+      </div>
+      <script src="../d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8c854.js?site=642c22cbffd9a014d7e28bda" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="../uploads-ssl.webflow.com/642c22cbffd9a014d7e28bda/js/webflow.4970799dd.js" type="text/javascript"></script><script>
+         const navItems = Array.from(document.querySelectorAll('.navitem'));
+         const nav = document.querySelector('.nav');
+         const navHover = document.querySelector('.nav-hover');
+         
+         function moveNavHover(x, y, width, height) {
+           Object.assign(navHover.style, {
+             left: `${x}px`,
+             top: `${y}px`,
+             width: `${width}px`,
+             height: `${height}px`,
+           });
+         }
+         
+         nav.addEventListener('mousemove', function (event) {
+           const navOffset = nav.getBoundingClientRect();
+           const relativeX = event.clientX - navOffset.left;
+           const relativeY = event.clientY - navOffset.top;
+         
+           const closestNavItem = navItems.reduce((closest, navItem) => {
+             const rect = navItem.getBoundingClientRect();
+             const centerX = rect.left + rect.width / 2;
+             const centerY = rect.top + rect.height / 2;
+             const distance = Math.hypot(centerX - event.clientX, centerY - event.clientY);
+         
+             if (!closest || distance < closest.distance) {
+               return { distance, centerX, centerY, width: rect.width, height: rect.height };
+             }
+         
+             return closest;
+           }, null);
+         
+           moveNavHover(
+             closestNavItem.centerX - navOffset.left,
+             closestNavItem.centerY - navOffset.top,
+             closestNavItem.width,
+             closestNavItem.height
+           );
+           navHover.classList.add('visible');
+         });
+         
+         nav.addEventListener('mouseleave', function () {
+           navHover.classList.remove('visible');
+         });
+      </script>
+      <script>
+         const itemContainers = document.querySelectorAll('.itemcontainer');
+         
+         function updateRadialGradientPosition(container, x, y) {
+           const radialGradient = container.querySelector('.radial-gradient');
+           const rect = container.getBoundingClientRect();
+           const offsetX = x - rect.left;
+           const offsetY = y - rect.top;
+         
+           const distances = {
+             left: offsetX,
+             right: rect.width - offsetX,
+             top: offsetY,
+             bottom: rect.height - offsetY,
+           };
+         
+           const closestSide = Object.keys(distances).reduce((min, side) => {
+             return distances[side] < distances[min] ? side : min;
+           });
+         
+           let gradientX = 0;
+           let gradientY = 0;
+         
+           switch (closestSide) {
+             case 'left':
+               gradientX = 0;
+               gradientY = offsetY;
+               break;
+             case 'right':
+               gradientX = rect.width;
+               gradientY = offsetY;
+               break;
+             case 'top':
+               gradientX = offsetX;
+               gradientY = 0;
+               break;
+             case 'bottom':
+               gradientX = offsetX;
+               gradientY = rect.height;
+               break;
+           }
+         
+           const centerX = gradientX - radialGradient.offsetWidth / 2;
+           const centerY = gradientY - radialGradient.offsetHeight / 2;
+         
+           radialGradient.style.transform = `translate(${centerX}px, ${centerY}px)`;
+         }
+         
+         itemContainers.forEach((container) => {
+           container.addEventListener('mousemove', (event) => {
+             updateRadialGradientPosition(container, event.clientX, event.clientY);
+           });
+         });
+         particlesJS('particles-js', {
+          "particles": {
+            "number": {
+              "value": 200,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#F6842A"
+            },
+            "shape": {
+              "type": "polygon",
+              "stroke": {
+                "width": 0,
+                "color": "#ffff"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "src": "img/github.svg",
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 0.1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 3,
+              "random": true,
+              "anim": {
+                "enable": true,
+                "speed": 1,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": false
+            },
+            "move": {
+              "enable": true,
+              "speed": 1,
+              "direction": "none",
+              "random": true,
+              "straight": false,
+              "out_mode": "out",
+              "bounce": false,
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": false
+              },
+              "onclick": {
+                "enable": false
+              },
+              "resize": true
+            }
+          },
+          "retina_detect": true
+        });
+      </script>
+      
+   </body>
+</html>
