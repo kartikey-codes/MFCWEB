@@ -60,6 +60,57 @@
   aspect-ratio: 1;
 }
 
+.mobile-nav-menu-icon {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 0 0 1.5rem;
+  margin-bottom: -1rem;
+  z-index: 250;
+  justify-content: space-between;
+  display: none;
+}
+.menu-icon-img {
+  width: 2.5rem;
+  cursor: pointer;
+}
+.mobile-nav {
+  display: none;
+  opacity: 0%;
+}
+.show-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  gap: 4rem;
+  opacity: 100%;
+  transition: all;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+.mobile-navitem {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.remove-def {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 @media screen and (max-width: 991px) {
   .faculty-card {
     width: 40%;
@@ -77,5 +128,8 @@
   }
   .socials {
     width: 70%;
+  }
+  .mobile-nav-menu-icon {
+    display: flex;
   }
 }

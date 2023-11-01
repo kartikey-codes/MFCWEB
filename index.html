@@ -131,7 +131,18 @@
             </nav>
          </div>
       </div>
-    
+      <div class="mobile-nav-menu-icon flex">
+        <img src="img/menu.png" alt="menu" class="menu-icon-img remove-def">
+        <img src="img/finallogo.png" alt="Logo" class="nav-logo remove-def">
+      </div>
+      <nav class="mobile-nav">
+               <a href="#Aim" class="mobile-navitem  remove-def">Our Aim</a>
+               <a href="#Domain" class="mobile-navitem  remove-def">Domains</a>
+               <a href="#" class="mobile-navitem  remove-def">Events</a>
+               <a href="#Blog" class="mobile-navitem  remove-def">Blog</a>
+               <a href="#Board" class="mobile-navitem  remove-def">Board</a>    
+      </nav>
+
       <div id="particles-js"></div>
       <div class="section header">
 
@@ -839,6 +850,28 @@
          nav.addEventListener('mouseleave', function () {
            navHover.classList.remove('visible');
          });
+         const mobileNav = document.querySelector(".mobile-nav");
+         const mobileNavItems = document.querySelectorAll(".mobile-navitem");
+         let menuOpen = false;
+         const menuIcon = document.querySelector(".menu-icon-img");
+         const changeMenuIcon = () => {
+            if(menuOpen)
+            {
+                menuIcon.src = "img/menu.png";
+            }
+            else{
+                menuIcon.src = "img/close.png";
+            }
+            menuOpen = !menuOpen; 
+         }
+         menuIcon.addEventListener("click",() => {
+            mobileNav.classList.toggle("show-menu");
+            changeMenuIcon();
+         })
+         mobileNavItems.forEach((item) => item.addEventListener("click",()=> {
+            mobileNav.classList.toggle("show-menu");
+            changeMenuIcon();
+         }))
       </script>
       <script>
          const itemContainers = document.querySelectorAll('.itemcontainer');
