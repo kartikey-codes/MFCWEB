@@ -3246,7 +3246,7 @@ label {
 }
 
 .lastitemreveision {
-  z-index: 9999;
+  z-index: 99;
   width: 100%;
   height: auto;
   grid-column-gap: 8px;
