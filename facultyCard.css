@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faculty-card-container {
+  width: 100%;
+  min-height: 30rem;
+  height: 70vh;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+.faculty-card {
+  width: 25%;
+  aspect-ratio: 0.8;
+  background-color: #1f1d23;
+  border-radius: 2rem;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.profile-pic {
+  width: 80%;
+  aspect-ratio: 1;
+  background: linear-gradient(
+    148deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border-radius: 50%;
+}
+.profile-pic img {
+  width: 80%;
+  aspect-ratio: 1;
+}
+.faculty-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.position {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.socials {
+  width: 50%;
+  justify-content: space-between;
+}
+.socials .social-icon {
+  width: 2.25rem;
+  aspect-ratio: 1;
+  background-color: #ffbc59;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.socials .social-icon img {
+  width: 60%;
+  aspect-ratio: 1;
+}
+
+@media screen and (max-width: 991px) {
+  .faculty-card {
+    width: 40%;
+  }
+  .socials {
+    width: 70%;
+  }
+  .faculty-card-container {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 479px) {
+  .faculty-card {
+    width: 75%;
+  }
+  .socials {
+    width: 70%;
+  }
+}
