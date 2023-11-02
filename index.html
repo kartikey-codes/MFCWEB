@@ -24,7 +24,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=DM+Sans:opsz,wght@9..40,100&family=Italiana&display=swap" rel="stylesheet">
-
+      <script src="https://kit.fontawesome.com/532dca04a1.js" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -795,7 +795,7 @@
          <div class="eclipse benefitseclipse"></div>
      </div> 
             </div>
-            <a href="#" class="btn">Alumni Board Members</a>
+            <a href="alumniboard.html" class="btn">Alumni Board Members</a>
             <!--End new Branch-->
 
             <!-----contact----------------->
@@ -830,21 +830,16 @@
          </div>
       </div>
 
-      <div class="footersection">
-         <div class="contentwrapper alignleft">
-            <div class="leftcopy smallmargin">
-               <p class="footercopy">© 2023 Mozilla Firefox Club. All rights reserved.</p>
-               <p class="footercopy"><a href="https://twitter.com/#" target="_blank">Terms and conditions<br/></a></p>
-               <p class="footercopy"><a href="https://twitter.com/#" target="_blank">Privacy Policy<br/></a></p>
-            </div>
-            <div class="leftcopy">
-               <p class="footercopy"><a href="https://twitter.com/#" target="_blank">Twitter</a></p>
-               <p class="footercopy"><a href="https://www.linkedin.com/in/#/" target="_blank">Linkedin</a></p>
-               <p class="footercopy"><a href="https://www.instagram.com/#/" target="_blank">Instagram</a></p>
-               <p class="footercopy"><a href="https://dribbble.com/#" target="_blank">Dribbble</a></p>
-            </div>
-         </div>
-      </div>
+      <div class='footer'>
+        <div class=follow>  
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-youtube"></i></a>
+        <a href=""><i class="fab fa-github"></i></a> 
+    </div>
+    <div class='copyright'><pr>©️ 2023 COPYRIGHT: MOZILLA FIREFOX CLUB, VIT</pr></div>
+  </div>
 
 
       <script>
@@ -994,87 +989,8 @@
              updateRadialGradientPosition(container, event.clientX, event.clientY);
            });
          });
-         particlesJS('particles-js', {
-          "particles": {
-            "number": {
-              "value": 200,
-              "density": {
-                "enable": true,
-                "value_area": 800
-              }
-            },
-            "color": {
-              "value": "#F6842A"
-            },
-            "shape": {
-              "type": "polygon",
-              "stroke": {
-                "width": 0,
-                "color": "#ffff"
-              },
-              "polygon": {
-                "nb_sides": 5
-              },
-              "image": {
-                "src": "img/github.svg",
-                "width": 100,
-                "height": 100
-              }
-            },
-            "opacity": {
-              "value": 0.5,
-              "random": true,
-              "anim": {
-                "enable": true,
-                "speed": 0.1,
-                "opacity_min": 0.1,
-                "sync": false
-              }
-            },
-            "size": {
-              "value": 3,
-              "random": true,
-              "anim": {
-                "enable": true,
-                "speed": 1,
-                "size_min": 0.1,
-                "sync": false
-              }
-            },
-            "line_linked": {
-              "enable": false
-            },
-            "move": {
-              "enable": true,
-              "speed": 1,
-              "direction": "none",
-              "random": true,
-              "straight": false,
-              "out_mode": "out",
-              "bounce": false,
-              "attract": {
-                "enable": false,
-                "rotateX": 600,
-                "rotateY": 1200
-              }
-            }
-          },
-          "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-              "onhover": {
-                "enable": false
-              },
-              "onclick": {
-                "enable": false
-              },
-              "resize": true
-            }
-          },
-          "retina_detect": true
-        });
-      </script>
-      
+         </script>
+      <script src="script.js"></script>
       
    </body>
 </html>
