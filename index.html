@@ -14,6 +14,7 @@
       <meta content="summary_large_image" name="twitter:card"/>
       <meta content="width=device-width, initial-scale=1" name="viewport"/>
       <link href="style.css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" href="facultyCard.css">
       <!-- <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1f82f6d6-6cc8-110c-6663-4bfd30ed094b"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1f82f6d6-6cc8-110c-6663-4bfd30ed094b"] {opacity:0;}}</style> -->
       <link href="https://fonts.googleapis.com/" rel="preconnect"/>
       <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous"/>
@@ -23,7 +24,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=DM+Sans:opsz,wght@9..40,100&family=Italiana&display=swap" rel="stylesheet">
-      
+
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -131,7 +132,18 @@
             </nav>
          </div>
       </div>
-    
+      <div class="mobile-nav-menu-icon flex">
+        <img src="img/menu.png" alt="menu" class="menu-icon-img remove-def">
+        <img src="img/finallogo.png" alt="Logo" class="nav-logo remove-def">
+      </div>
+      <nav class="mobile-nav">
+               <a href="#Aim" class="mobile-navitem  remove-def">Our Aim</a>
+               <a href="#Domain" class="mobile-navitem  remove-def">Domains</a>
+               <a href="#" class="mobile-navitem  remove-def">Events</a>
+               <a href="#Blog" class="mobile-navitem  remove-def">Blog</a>
+               <a href="#Board" class="mobile-navitem  remove-def">Board</a>    
+      </nav>
+
       <div id="particles-js"></div>
       <div class="section header">
 
@@ -407,26 +419,35 @@
      </div>
      <a href="https://medium.com/mozilla-firefox-club" class="btn">Read More</a>
      
-
-
       <div id="Faculty" class="section header lastsection">
          <div class="container gallery bottomborder bottomnone topbordernone">
             <div class="titlecontainerbottom">
                <h2 class="sectionnewheaders">Faculty Coordinator<br/></h2>
-               <h2 data-w-id="f35af53e-931b-d30c-2442-d4ea6b9f2c8c" style="opacity:0;-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="sectionh2headers outline">Jayakumar Sadhasivam<br/></h2>
             </div>
-            <div class="benefitscontainer spacetop mobile">
-               <div class="itemcontainer emptycontainer imagecontainer"><img src="https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg" loading="lazy" width="459" sizes="(max-width: 479px) 100vw, (max-width: 767px) 35vw, (max-width: 991px) 38vw, (max-width: 1439px) 22vw, 24vw" alt="" srcset="https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg 500w, https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg 800w, https://jayakumars.in/wp-content/uploads/2022/12/Jay-1-copy-2.jpg 918w" class="image-4"/></div>
-               <div class="itemcontainer aligntop relativebottom borderbottom aboutme">
-                  <div class="benefitscontentright aboutme">
-                     <h3 class="sectionsmallheaders">Jayakumar Sadhasivam</h3><br/>
-                     <p class="paragraphdesign"><span class="justbold">Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1</span> at Vellore Institute of Technology (VIT) in the School of Computer Science and Engineering (SCOPE). <br/></p>
-                     <p class="paragraphdesign"><span class="justbold">Jayakumar's areas of expertise include Open Source Programming, Network Security, Storage Technologies, and Machine Learning. His research interests are in the use of technology in education and developing open-source software that takes into consideration the unique needs of learners. He received his Ph.D. in Information Technology from the Vellore Institute of Technology (VIT).<br/></p>
-                     
-                     <p class="paragraphdesign centerquote">He has been a volunteer at Mozilla. He is contributing to various projects in Mozilla few of them are SUMO (Support Mozilla), QA (Quality Assurance), l10n (Localization), WebMaker, Bugzilla, and OpenBadges.<br/></p>
-                     
-                  </div>
-               </div>
+            <div class="faculty-card-container flex">
+                <div class="card-wrapper flex">
+                    <div class="faculty-card faculty-card-front  flex">
+                        <div class="profile-pic flex">
+                          <img src="img/profile.png" alt="Mr. Jayakumar S" />
+                        </div>
+                        <div class="faculty-name">Mr. Jayakumar S</div>
+                        <div class="position">Faculty Coordinator</div>
+                        <div class="flex socials">
+                          <div class="social-icon flex">
+                            <img src="img/linkedin.png" alt="linkedin" />
+                          </div>
+                          <div class="social-icon flex">
+                            <img src="img/github.png" alt="github" />
+                          </div>
+                          <div class="social-icon flex">
+                            <img src="img/email.png" alt="email" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faculty-card faculty-card-back flex">
+                        <p>Jayakumar Sadhasivam is an Assistant Professor Senior Grade 1 at Vellore Institute of Technology (VIT) in the School of Computer Science and Engineering (SCOPE). Jayakumar's areas of expertise include Open Source Programming, Network Security, Storage Technologies, and Machine Learning. His research interests are in the use of technology in education and developing open-source software that takes into consideration the unique needs of learners</p>
+                      </div>
+                </div>
             </div>
          </div>
       </div>
@@ -895,6 +916,28 @@
          nav.addEventListener('mouseleave', function () {
            navHover.classList.remove('visible');
          });
+         const mobileNav = document.querySelector(".mobile-nav");
+         const mobileNavItems = document.querySelectorAll(".mobile-navitem");
+         let menuOpen = false;
+         const menuIcon = document.querySelector(".menu-icon-img");
+         const changeMenuIcon = () => {
+            if(menuOpen)
+            {
+                menuIcon.src = "img/menu.png";
+            }
+            else{
+                menuIcon.src = "img/close.png";
+            }
+            menuOpen = !menuOpen; 
+         }
+         menuIcon.addEventListener("click",() => {
+            mobileNav.classList.toggle("show-menu");
+            changeMenuIcon();
+         })
+         mobileNavItems.forEach((item) => item.addEventListener("click",()=> {
+            mobileNav.classList.toggle("show-menu");
+            changeMenuIcon();
+         }))
       </script>
       <script>
          const itemContainers = document.querySelectorAll('.itemcontainer');
