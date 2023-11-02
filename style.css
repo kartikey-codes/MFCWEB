@@ -837,6 +837,7 @@ textarea.w-input, textarea.w-select {
 
 
 
+
 @media screen and (max-width: 991px) {
   .w-container {
     max-width: 728px;
@@ -1726,6 +1727,7 @@ textarea.w-input, textarea.w-select {
     max-width: 96vw;
     max-height: 96vh;
   }
+  
 
   .w-lightbox-group .w-lightbox-image {
     max-width: 82.3vw;
@@ -3921,9 +3923,23 @@ letter-spacing: 4px;
   display: flex;
 }
 
+
 .radial-gradient {
   z-index: 0;
   position: absolute;
+}
+
+.btn{
+  display: block;
+  margin:50px auto;
+  width:fit-content;
+  border:1px solid #f7db09;
+  padding:14px 50px;
+  border-radius: 20px;
+  background-color: #fbc30af1;
+  color: #000000;
+  text-decoration: none;
+
 }
 
 .heading-4 {
@@ -4115,6 +4131,92 @@ letter-spacing: 4px;
 .paragraph-4 {
   color: #f5f7ff;
 }
+
+/*----contact-------*/
+
+.conatiner{
+  display: flex;
+  justify-content: space-between;
+}
+.sub-titles {
+  text-align: center; 
+  background: radial-gradient(58.63% 37.93% at 50% 50%, #F6842A 22.09%, #AF7AF2 100%);
+color: transparent; /* Set the text color to transparent */
+
+/* Use background-clip and text-fill-color to set text color based on background */
+-webkit-background-clip: text;
+background-clip: text;
+text-fill-color: transparent;
+
+}
+.contact-left{
+  flex-basis: 35%;
+  
+  
+}
+.contact-right{
+ flex-basis:60%;
+ 
+ }
+.contact-left p{
+  margin-top: 30px;
+}
+.contact-left p i{
+  
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons{
+  margin-top: 30px;
+  }
+
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  display:inline-block;
+  transition: transform 0.5s;
+}
+
+.contact-right form{
+   width: 100%;
+}
+
+form input, form textarea{
+  width:100%;
+  border:0;
+  outline:none;
+  background: #262626;
+  padding: 15px;
+  margin:15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor:pointer;
+  border-radius: 20px;
+}
+
+#msg{
+  color:#61b752;
+  margin-top: -0.5px;
+  display: block;
+}
+
+
+/*----end---------------------contact-------*/
+ 
+
 
 .footersection {
   z-index: 10;
