@@ -4089,18 +4089,18 @@ label {
   position: absolute;
 }
 
-.btn{
+.btn {
   display: block;
-  margin:50px auto;
-  width:fit-content;
-  border:1px solid #f7db09;
-  padding:14px 50px;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ec9b06;
+  padding: 14px 50px;
   border-radius: 20px;
-  background-color: #fbc30af1;
-  color: #000000;
+  background-color: transparent; 
+  color: rgba(237, 125, 14, 0.856); 
   text-decoration: none;
-
 }
+
 
 .heading-4 {
   font-size: 2em;
@@ -4301,9 +4301,7 @@ label {
 .sub-titles {
   text-align: center; 
   background: radial-gradient(58.63% 37.93% at 50% 50%, #F6842A 22.09%, #AF7AF2 100%);
-color: transparent; /* Set the text color to transparent */
-
-/* Use background-clip and text-fill-color to set text color based on background */
+color: transparent; 
 -webkit-background-clip: text;
 background-clip: text;
 text-fill-color: transparent;
@@ -4369,8 +4367,10 @@ form .btn2{
 
 #msg{
   color:#61b752;
-  margin-top: -0.5px;
+  text-align: center;
+  margin-top: -40px;
   display: block;
+  
 }
 
 
