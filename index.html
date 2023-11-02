@@ -105,8 +105,70 @@
          }
       </style>
    </head>
-   <body class="body">
    
+  <style>
+   .preloader {
+    position: fixed;
+  top: 19%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  z-index: -2;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.progress {
+  height: 5px;
+  background: #222;
+  width: 0%;
+  transition: width 0.5s linear;
+}
+
+.progress-bar {
+  height: 100%;
+  background: orange;
+  width: 0%;
+}
+
+.preloader-image {
+  animation: pulse 2s linear infinite;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+   
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1);
+  }
+} 
+  </style>
+  
+   <body class="body">
+    <div id="particles-js"></div>
+    <div class="preloader">
+        <div class="progress">
+          <div class="progress-bar"></div>
+          
+        </div>
+      
+        <img src="img/fox.png" class="preloader-image">
+      </div>
+      <div class="other-content">
       <div class="headerfixed">
          <div class="header hide">
             <div class="logo">
@@ -144,7 +206,7 @@
                <a href="#Board" class="mobile-navitem  remove-def">Board</a>    
       </nav>
 
-      <div id="particles-js"></div>
+     
       <div class="section header">
 
         <!-- Added fox image container -->
@@ -160,19 +222,14 @@
                  <h1 class="heading-2">MOZILLA FIREFOX CLUB</h1>
                  <p class="subheading">A student club in VIT Vellore</p>
               </div>
-              <p class="paragraph intro">Mozilla Firefox Club-VIT is the club for Mozilla Firefox open-source community enthusiasts at VIT University, Vellore, to promote Web development and Open Source Technologies in the University.</p>
-                  
+              <p class="paragraph intro">Mozilla Firefox Club-VIT is the club for Mozilla Firefox open-source community enthusiasts at VIT University, Vellore, to promote Web development and Open Source Technologies in the University.</p>   
            </div>
+           <h2 class="sectionnewheaders">About Us<br/></h2>  
         </div>
-      
-      </div>
-      
-    
-      <h2 class="sectionnewheaders">About Us<br/></h2>  
+        </div>
         <div class="logowrapper">
-          <p class="paragraphdesign">Mozilla Firefox Club VIT, one of the largest developers' communities in VIT, Vellore has been working with an aspiration of changing ideas into reality ever since its inception. With a 6 year rich history as one of the top technical clubs comprising a team of over 150+ core members, 3 mentors, and 10 as the executive board, dedicated to technically strengthening the students by integrating their skills in various fields of Engineering & Technology, so as to face the highly competitive environment. We provide a morale boosting system for the talented youth through our professional endeavors and inspire each student at VIT and beyond to follow our academic interests and goals. We have a diverse audience from over 15 countries as a part of the students we teach. Creating value through real world impact-driven projects.</p>
-        </div>
-      </div>
+          <p class="paragraphdesign" style="align-items: center;">Mozilla Firefox Club VIT, one of the largest developers' communities in VIT, Vellore has been working with an aspiration of changing ideas into reality ever since its inception. With a 6 year rich history as one of the top technical clubs comprising a team of over 150+ core members, 3 mentors, and 10 as the executive board, dedicated to technically strengthening the students by integrating their skills in various fields of Engineering & Technology, so as to face the highly competitive environment. We provide a morale boosting system for the talented youth through our professional endeavors and inspire each student at VIT and beyond to follow our academic interests and goals. We have a diverse audience from over 15 countries as a part of the students we teach. Creating value through real world impact-driven projects.</p>
+        </div>    
       <div id="Domain" class="section header">
         <div class="container gallery bottomborder bottomnone topbordernone">
            <h2 class="sectionnewheaders">Our Domains<br/></h2>
@@ -840,7 +897,7 @@
     </div>
     <div class='copyright'><pr>©️ 2023 COPYRIGHT: MOZILLA FIREFOX CLUB, VIT</pr></div>
   </div>
-
+ </div>
 
       <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycby36HjuV61CPiXnNGRpaH6n5kIercDZ-ZzrMY6OWlETjhdl9Zd_OkiuqxENwja3LXicpQ/exec'
@@ -991,6 +1048,17 @@
          });
          </script>
       <script src="script.js"></script>
+      <script>
+        // Function to hide the preloader after a delay of 2-3 seconds
+        window.addEventListener('load', function () {
+          var preloader = document.querySelector('.preloader'); // Get the preloader element
+          
+          // Add a delay of 2-3 seconds (in milliseconds) before hiding the preloader
+          setTimeout(function() {
+            preloader.style.display = 'none'; // Hide the preloader after the delay
+          }, 5000); // Change 2000 to 3000 for a 3-second delay
+        });
+      </script>
       
    </body>
 </html>

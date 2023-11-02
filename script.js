@@ -77,16 +77,13 @@ particlesJS('particles-js', {
     },
     "retina_detect": true
   });
-  const yearSelect = document.getElementById('year');
-        const board2023 = document.getElementById('board-2023'); 
-        const board2022 = document.getElementById('board-2022');
-        // board2022.style.display = 'none';
-        yearSelect.addEventListener('change', () => {
-          if(yearSelect.value === '2023') {
-            board2023.style.display = 'block';
-            board2022.style.display = 'none';
-          } else {
-            board2023.style.display = 'none';
-            board2022.style.display = 'block';
-          }
-        })
+  window.addEventListener('load', function () {
+    var preloader = document.querySelector('.preloader'); 
+    var otherContent = document.querySelector('.other-content'); 
+    otherContent.style.display = 'none';
+    setTimeout(function() {
+      preloader.style.display = 'none';
+      otherContent.style.display = 'block'; 
+    }, 3000);
+  });
+       
