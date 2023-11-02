@@ -11,14 +11,19 @@
   font-family: "Raleway", sans-serif;
   color: #fff;
 }
-.faculty-card {
+.card-wrapper {
   width: 25%;
+  aspect-ratio: 0.8;
+}
+.faculty-card {
+  width: 100%;
   aspect-ratio: 0.8;
   background-color: #1f1d23;
   border-radius: 2rem;
   flex-direction: column;
   padding: 1rem;
   gap: 1.5rem;
+  cursor: pointer;
 }
 .profile-pic {
   width: 80%;
@@ -111,9 +116,25 @@
   -ms-user-select: none;
   user-select: none;
 }
+.faculty-card-back {
+  position: absolute;
+  width: 25%;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  text-align: justify;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease-in;
+}
+.card-wrapper:hover .faculty-card-back {
+  opacity: 1;
+}
 @media screen and (max-width: 991px) {
-  .faculty-card {
-    width: 40%;
+  /* .faculty-card {
+    width: 100%;
+  } */
+  .card-wrapper {
+    width: 50%;
   }
   .socials {
     width: 70%;
@@ -121,9 +142,16 @@
   .faculty-card-container {
     height: 40vh;
   }
+  .faculty-card-back {
+    width: 50%;
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 479px) {
-  .faculty-card {
+  /* .faculty-card {
+    width: 75%;
+  } */
+  .card-wrapper {
     width: 75%;
   }
   .socials {
@@ -131,5 +159,9 @@
   }
   .mobile-nav-menu-icon {
     display: flex;
+  }
+  .faculty-card-back {
+    width: 75%;
+    font-size: 0.8rem;
   }
 }
