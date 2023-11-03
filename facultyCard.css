@@ -166,7 +166,23 @@
 .lastitemreveision .paragraphdesign {
   color: #fff;
 }
-
+.domain-card {
+  cursor: pointer;
+}
+.domain-desc {
+  display: none;
+  width: 100%;
+}
+.domain-card:hover .domain-desc {
+  display: block;
+  font-size: 0.9rem;
+}
+.domain-card:hover .iconcontainer {
+  display: none;
+}
+.domain-card:hover .heading-3 {
+  display: none;
+}
 @media screen and (max-width: 991px) {
   /* .faculty-card {
     width: 100%;
