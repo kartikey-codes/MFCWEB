@@ -4096,10 +4096,17 @@ label {
   border: 1px solid #ec9b06;
   padding: 14px 50px;
   border-radius: 20px;
-  background-color: transparent; 
-  color: rgba(237, 125, 14, 0.856); 
+  background-color: transparent;
+  color: rgba(237, 125, 14, 0.856);
   text-decoration: none;
+  transition: background-color 0.3s, color 0.3s; /* Add a transition for a smooth effect */
 }
+
+.btn:hover {
+  background-color: rgba(237, 125, 14, 0.856); /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
 
 
 .heading-4 {
