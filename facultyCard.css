@@ -24,6 +24,7 @@
   padding: 1rem;
   gap: 1.5rem;
   cursor: pointer;
+  position: relative;
 }
 .profile-pic {
   width: 80%;
@@ -34,6 +35,7 @@
     rgba(255, 255, 255, 0.05) 100%
   );
   border-radius: 50%;
+  scale: 0.9;
 }
 .profile-pic img {
   width: 80%;
@@ -126,9 +128,6 @@
   pointer-events: none;
   transition: all 0.5s ease-in;
 }
-.card-wrapper:hover .faculty-card-back {
-  opacity: 1;
-}
 
 .author-container {
   width: 100%;
@@ -183,6 +182,25 @@
 .domain-card:hover .heading-3 {
   display: none;
 }
+.check {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  margin-top: 5rem;
+  pointer-events: none;
+  font-size: 1.1rem;
+}
+.info-card {
+  width: 100%;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
+.info-card:hover {
+  opacity: 0;
+}
+
 @media screen and (max-width: 991px) {
   /* .faculty-card {
     width: 100%;
@@ -198,6 +216,9 @@
   }
   .faculty-card-back {
     width: 50%;
+    font-size: 1rem;
+  }
+  .check {
     font-size: 1rem;
   }
   .sectionsmallheaders {
@@ -225,8 +246,11 @@
     width: 75%;
     font-size: 0.8rem;
   }
+  .check {
+    font-size: 0.9rem;
+  }
   .blog-desc {
-    font-size: 0.9 rem;
+    font-size: 0.9rem;
   }
   .sectionsmallheaders {
     max-width: 100%;
