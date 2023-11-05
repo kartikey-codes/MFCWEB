@@ -13,6 +13,11 @@
       <meta property="og:type" content="website"/>
       <meta content="summary_large_image" name="twitter:card"/>
       <meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+
+      
       <link href="style.css" rel="stylesheet" type="text/css"/>
       <link rel="stylesheet" href="facultyCard.css">
       <!-- <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1f82f6d6-6cc8-110c-6663-4bfd30ed094b"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="3af9ea9d-686f-9111-39c5-d5dcef528f11"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="1f82f6d6-6cc8-110c-6663-4bfd30ed094b"] {opacity:0;}}</style> -->
@@ -156,7 +161,6 @@
   }
 } 
   </style>
-  
    <body class="body">
     <div id="particles-js"></div>
     <div class="preloader">
@@ -185,9 +189,10 @@
                 <img src="img/finallogo.png" alt="Logo" class="nav-logo">
                 <span class="logo-text"></span>
                <div class="nav-hover"></div>
+               
                <a href="#Aim" class="navitem">Our Aim</a>
                <a href="#Domain" class="navitem">Domains</a>
-               <a href="#" class="navitem">Events</a>
+               <a href="#Event" class="navitem">Events</a>
                <a href="#Blog" class="navitem">Blog</a>
                <a href="#Board" class="navitem">Board</a>               
             </nav>
@@ -200,7 +205,7 @@
       <nav class="mobile-nav">
                <a href="#Aim" class="mobile-navitem  remove-def">Our Aim</a>
                <a href="#Domain" class="mobile-navitem  remove-def">Domains</a>
-               <a href="#" class="mobile-navitem  remove-def">Events</a>
+               <a href="#Event" class="mobile-navitem  remove-def">Events</a>
                <a href="#Blog" class="mobile-navitem  remove-def">Blog</a>
                <a href="#Board" class="mobile-navitem  remove-def">Board</a>    
       </nav>
@@ -324,107 +329,138 @@
 
 <!-- Events -->
 
-      <div id = "Check_Event" class = "section_header_eve">
-        <div class="container gallery bottomborder bottomnone topbordernone">
-            <h2 class="sectionnewheaders">Checkout Our Events<br/></h2>
-           <p class="paragraphdesign">MFC VIT boasts a wide array of successful events conducted <br> throughout the year including speaker sessions with renowned technocrats, competitive coding events, and many more.</p>
-        
+<div id = "Event" class = "section_header_eve">
+        <div  class="contain_eve">
+            <h1 class="eve_head">Check out the Events at MFC</h1>
+            <p class="eve_para">MFC VIT boasts a wide array of successful events conducted throughout the year including speaker sessions with renowned technocrats, competitive coding events, and many more.
+            </p>
+        </div>
+</div>
+<div class = "section_evexx">
+    <div class="Event_body">
+
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="EventXcard-wrapper swiper-wrapper">
+                    <div class="EventXcard swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="EventXcard-image">
+                                <img src="img/bug.png" alt="" class="EventXcard-img">
+                            </div>
+                        </div>
+
+                        <div class="EventXcard-content">
+                            <h2 class="name">Bug Venture</h2>
+                            <p class="description">This event revolved around the 
+                                game of Bugs and brains, a 
+                                quest in which the participants 
+                                would solve bugs to get 
+                                questions which would bend 
+                                their minds and make them think 
+                                twice about their capabilities 
+                                and choices.</p>
+
+                            <!-- <button class="button">View More</button> -->
+                        </div>
+                    </div>
+                    <div class="EventXcard swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="EventXcard-image">
+                                <img src="img/mozcode.png" alt="" class="EventXcard-img">
+                            </div>
+                        </div>
+
+                        <div class="EventXcard-content">
+                            <h2 class="name">Mozcode</h2>
+                            <p class="description">MFC-VIT's flagship event needs no introduction ,Mozcode'21 a one of a kind competitive coding event was a huge success spanning over 3 rounds and  2 days time provided an unique opportunity to participants to test their skill in a race against time in an intense competitive atmosphere.</p>
+
+                            <!-- <button class="button">View More</button> -->
+                        </div>
+                    </div>
+                    <div class="EventXcard swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="EventXcard-image">
+                                <img src="img/marvel.png" alt="" class="EventXcard-img">
+                            </div>
+                        </div>
+
+                        <div class="EventXcard-content">
+                            <h2 class="name">ML Marvel</h2>
+                            <p class="description">MFC-VIT conducted a one of a kind machine learning series spanning over three episodes where participants got to learn various machine learning algorithms along with a follow up live project demonstrations helping participants to solidify a foundation in the concepts of machine learning.</p>
+
+                            <!-- <button class="button">View More</button> -->
+                        </div>
+                    </div>
+                    <div class="EventXcard swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="EventXcard-image">
+                                <img src="img/pv.png" alt="" class="EventXcard-img">
+                            </div>
+                        </div>
+
+                        <div class="EventXcard-content">
+                            <h2 class="name">Parallax View</h2>
+                            <p class="description">Metaverse has become the newest macro goal for tech
+                                industries to invest in and to see the world in a new perspective with the help of AR and VR technologies. MFC-VIT conducted "The Parallax View: Bring the world to wherever you are" and "The Parallax View: Experience what you see" where reputed speakers provided all explanation and clarifications to the audience regarding AR and VR technologies.</p>
+
+                            <!-- <button class="button">View More</button> -->
+                        </div>
+                    </div>
+                    <div class="EventXcard swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="EventXcard-image">
+                                <img src="img/web3.png" alt="" class="EventXcard-img">
+                            </div>
+                        </div>
+
+                        <div class="EventXcard-content">
+                            <h2 class="name">Web3 : A vision of Future</h2>
+                            <p class="description">The event was a one hour long AMA session with our acclaimed speaker, Mr. Anshul Rustaggi who is founder and CEO of Zionverse and an expert in Web3 and blockchain technology. The session was an all out interactive session wherein attendees could clarify any of their doubts about web3 and cryptocurrency.</p>
+
+                            <!-- <button class="button">View More</button> -->
+                        </div>
+                    </div>
+                    <div class="EventXcard swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="EventXcard-image">
+                                <img src="img/django.png" alt="" class="EventXcard-img">
+                            </div>
+                        </div>
+
+                        <div class="EventXcard-content">
+                            <h2 class="name">Django Series</h2>
+                            <p class="description">MFC-VIT conducted a full Django tutorial throughout the course of 4 episodes where hosted live on YouTube where participants could learn Django essentials right from scratch and then build on it</p>
+
+                            <!-- <button class="button">View More</button> -->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</div>
+
 <!-- for 2023 -->
-<div class="contain_Events">
-
-
-    <!-- <div class="Event_Xcontainer"> -->
-    
-    
-      <input type="radio" name="slider" class="d-none" id="s1" checked>
-      <input type="radio" name="slider" class="d-none" id="s2">
-      <input type="radio" name="slider" class="d-none" id="s3">
-      <input type="radio" name="slider" class="d-none" id="s4">
-      <input type="radio" name="slider" class="d-none" id="s5">
-    
-      <div class="cards_Eve">
-        <label for="s1" id="slide1">
-          <div class="card_xEve">
-            <div class="Eve_ximage">
-              <img src="" alt="Event Image">
+ 
   
-            </div>
-            <div class="infos">
-              <span class="namexx">ML Marvel</span>
-              <span class="loremxx">Lorem ipsum dolor sit amet, sit amet  adipiscing elit. Aenean vel ansd . Nullam
-                lorem. Nulla eu
-                sodales</span>
-            </div>
-  
-          </div>
-        </label>
-    
-        <label for="s2" id="slide2">
-          <div class="card_xEve">
-            <div class="Eve_ximage">
-              <img src="" alt="Event Image">
-            </div>
-            <div class="infos">
-              <span class="namexx">ML Marvel</span>
-              <span class="loremxx">Lorem ipsum dolor sit, adipiscing elit. Aenean vel sit ansd . Nullam
-                lorem. Nulla eu
-                sodales karma stellus</span>
-            </div>
-  
-          </div>
-        </label>
-    
-        <label for="s3" id="slide3">
-          <div class="card_xEve">
-            <div class="Eve_ximage">
-              <img src="" alt="Event Image">
-              
-            </div>
-            <div class="infos">
-              <span class="namexx">ML Marvel</span>
-              <span class="loremxx">Lorem ipsum dolor, sit amet let kar adipiscing. Aenean vel velit sit ansd . Nullam
-                lorem. Nulla karma stellus</span>
-            </div>
-  
-          </div>
-        </label>
-    
-        <label for="s4" id="slide4">
-          <div class="card_xEve">
-            <div class="Eve_ximage">
-              <img src="i" alt="Event Image">
-              
-            </div>
-            <div class="infos">
-              <span class="namexx">ML Marvel</span>
-              <span class="loremxx">Lorem ipsum dolor sit, sit amet elit. Aenean sit amet sit amet vel velit sit ansd. Nulla eu
-                sodales stellus</span>
-            </div>
-  
-          </div>
-        </label>
-    
-        <label for="s5" id="slide5">
-          <div class="card_xEve">
-            <div class="Eve_ximage">
-              <img src="" alt="Event Image">
-              
-            </div>
-            <div class="infos">
-              <span class="namexx">ML Marvel</span>
-              <span class="loremxx">Lorem ipsum sit amet, sit amet elit. Aenean vel velit ansd . Nullam
-                lorem. Nulla eu
-                sodales stellus</span>
-            </div>
-  
-          </div>
-        </label>
-      </div>
-    
-    <!-- </div> -->
-  
-  </div>
-  </div>
 
 
 
@@ -1170,7 +1206,10 @@
       <script src="script.js"></script>
       
 
-      <script>
+<script>
+
+
+
         var slidePosition = 1;
 SlideShow(slidePosition);
 
@@ -1179,7 +1218,7 @@ function plusSlides(n) {
   SlideShow(slidePosition += n);
 }
 
-//  images controls
+//  img controls
 function currentSlide(n) {
   SlideShow(slidePosition = n);
 }
@@ -1201,6 +1240,42 @@ function SlideShow(n) {
 } 
       </script>
 
-  
+<script src="swiper-bundle.min.js"></script>
+
+
+<script>
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+
+</script>
+
 </body>
 </html>

@@ -3641,6 +3641,7 @@ label {
 }
 
 .nav-hover {
+  scroll-behavior: smooth;
   width: 110px;
   height: 40px;
   opacity: 0;
@@ -3653,6 +3654,7 @@ label {
 }
 
 .nav-hover.visible {
+  scroll-behavior: smooth;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.18);
 }
@@ -6797,7 +6799,7 @@ form .btn2 {
   font-style: "Poppins", sans-serif;
 }
 .link a:hover {
-  color: white;
+  color: #ff7b00;
 }
 
 .link_2 a {
@@ -6809,7 +6811,7 @@ form .btn2 {
   font-style: "Poppins", sans-serif;
 }
 .link_2 a:hover {
-  color: white;
+  color: #ff7b00;
 }
 
 hr {
@@ -6827,185 +6829,154 @@ hr {
 }
 
 
+.section_evexx{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Event_body{
 
-
-.contain_Events {
-  margin-top: 20px;
-  margin-left: 10px;
-  padding-left: 10px;
-  margin-right: 10px;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-x: hidden;
-  height: 100%;
+
+}
+
+.slide-container{
+  max-width: 75vw;
   width: 100%;
+  padding-top: 20px;
 }
-
-
-
-.d-none{
-  display: none;
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
-
-
-
-.cards_Eve {
-
-  position: relative;
-  height: 500px;
-  width: 430px;
-  margin-bottom: 20px;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-
-.cards_Eve label {
-
-  position: absolute;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  cursor: pointer;
-  transition: transform 0.55s ease;
-}
-@media screen and (max-width:919px) {
-  .cards_Eve label{
-    width: 90%;
-  }
-}
-@media screen and (max-width:765px) {
-  .cards_Eve label{
-    width: 80%;
-  }
-}
-@media screen and (max-width:690px) {
-  .cards_Eve label{
-    width: 70%;
-  }
-}
-
-
-
-.cards_Eve .card_xEve{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /* background: radial-gradient(93.18% 50% at 50% 50%, #F9A826 22.09%, #caa269 100%); */
+.EventXcard{
+  border-radius: 25px;
   background-color: #110e18;
-  border-radius: 10px;
-  padding: 30px 35px;
 }
-
- .card_xEve .Eve_ximage{
-
+.image-content,
+.EventXcard-content{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+  border-radius: 25px;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #110e18; */
+  border-radius: 25px 25px 25px 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  /* background-color: #ff7b00; */
 }
 
-.card_xEve .Eve_ximage img{
-
-  border-radius: 5px;
-  box-shadow: 15px 15px 40px rgba(255, 123, 0, 50%);
-  margin-top: 23px;
-  width: 86%;
-  height: 220px;
-  object-fit: cover;
+.EventXcard-image{
+  position: relative;
+  height: 75%;
+  width: 75%;
+  background-color: #ff7b00;
+  box-shadow: 10px 10px 5px #ff7b00 ;
+  border-radius: 35px 35px 35px;
 }
-
-
-.card_xEve .infos{
-
-  display: block;
-  text-align: end;
-  padding-top: 60px;
+.EventXcard-image .EventXcard-img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  /* border-radius: 50%; */
+  /* border: 4px solid #ff7b00; */
 }
-
-.infos span{
-
-  display: block;
-}
-
-.infos .namexx{
-
+.name{
+  font-weight: 700;
   font-size: 30px;
-  color: var(--current-color1);
-  letter-spacing: 8px;
-  margin-bottom: 20px;
-  padding-left: 25%;
-  transition: all .6s ease;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.section_evexx .button{
+  border: none;
+  font-size: 16px;
+  color: #ff7b00;
+  padding: 8px 16px;
+  background-color: #ff7b00;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.section_evexx .button:hover{
+  background: #ff7b00;
 }
 
-.infos .loremxx{
-
-  font-size: 15.5px;
-  color: #ECEAED;
-  letter-spacing: 3px;
+.swiper-navBtn{
+  color: #ff7b00;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #ff7b00;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #ff7b00;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #ff7b00;
 }
 
-
-
-#s1:checked~.cards_Eve #slide4,
-#s2:checked~.cards_Eve #slide5,
-#s3:checked~.cards_Eve #slide1,
-#s4:checked~.cards_Eve #slide2,
-#s5:checked~.cards_Eve #slide3 {
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(-70%, 0, -220px);
-  --current-color1: #ECEAED;
-  --current-color2: #404457;
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
 }
-
-#s1:checked~.cards_Eve #slide5,
-#s2:checked~.cards_Eve #slide1,
-#s3:checked~.cards_Eve #slide2,
-#s4:checked~.cards_Eve #slide3,
-#s5:checked~.cards_Eve #slide4 {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(-35%, 0, -120px);
-  --current-color1: #ECEAED;
-  --current-color2: #404457;
-}
-
-#s1:checked~.cards_Eve #slide1,
-#s2:checked~.cards_Eve #slide2,
-#s3:checked~.cards_Eve #slide3,
-#s4:checked~.cards_Eve #slide4,
-#s5:checked~.cards_Eve #slide5 {
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
-  transform: translate3d(0, 0, 0);
-  --current-color1: #fad00c;
-  --current-color2: #ECEAED;
-}
-
-#s1:checked~.cards_Eve #slide2,
-#s2:checked~.cards_Eve #slide3,
-#s3:checked~.cards_Eve #slide4,
-#s4:checked~.cards_Eve #slide5,
-#s5:checked~.cards_Eve #slide1 {
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(35%, 0, -120px);
-  --current-color1: #ECEAED;
-  --current-color2: #404457;
-}
-
-#s1:checked~.cards_Eve #slide3,
-#s2:checked~.cards_Eve #slide4,
-#s3:checked~.cards_Eve #slide5,
-#s4:checked~.cards_Eve #slide1,
-#s5:checked~.cards_Eve #slide2 {
-  box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(70%, 0, -220px);
-  --current-color1: #ECEAED;
-  --current-color2: #404457;
-}
-
-
-
 
 .profile_fab{
   color: #f6842a;
   margin-left: 10px;
   margin-right: 10px;
 } 
+
+html{
+  scroll-behavior: smooth;
+}
+
+.section_header_eve{
+
+  scroll-margin-top: 70px;
+
+}
