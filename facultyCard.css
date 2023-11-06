@@ -65,6 +65,8 @@
 .socials .social-icon img {
   width: 60%;
   aspect-ratio: 1;
+  align-items: center;
+  margin-left: 19%;
 }
 
 .mobile-nav-menu-icon {
