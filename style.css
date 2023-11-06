@@ -6862,7 +6862,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 14px;
+  padding: 25px 23px;
 }
 .image-content{
   position: relative;
@@ -7044,4 +7044,17 @@ html{
 .counts h4{
   font-size: 12px;
 }
+}
+
+.date{
+  display: flex;
+}
+.date_in{
+  color: #333333;
+  font-size: 15px;
+}
+
+.date_in_in{
+  margin-top: 25.85px;
+  font-size: 12px;
 }
