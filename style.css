@@ -2915,7 +2915,7 @@ label {
 .sectionsmallheaders {
   color: rgba(195, 216, 103, 0.5);
   letter-spacing: 4px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 0;
   font-family: Satoshi, sans-serif;
   font-size: 0.7em;
