@@ -17,7 +17,8 @@
 }
 .faculty-card {
   width: 100%;
-  aspect-ratio: 0.8;
+  height: max-content;
+  /* aspect-ratio: 0.8; */
   background-color: #1f1d23;
   border-radius: 2rem;
   flex-direction: column;
@@ -300,4 +301,5 @@
   display: flex;
   justify-content: space-between;
   scale: 1.2;
+  margin-top: 1rem;
 }
