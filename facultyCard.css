@@ -246,8 +246,12 @@
   .mobile-nav-menu-icon {
     display: flex;
   }
+  .faculty-card {
+    height: 60vh;
+    padding: 0.25rem;
+  }
   .faculty-card-back {
-    width: 75%;
+    width: 95%;
     font-size: 0.8rem;
   }
   .check {
